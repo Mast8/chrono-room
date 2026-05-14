@@ -1,0 +1,259 @@
+/* main variables */
+:root {
+    --primary-teal: #008080;
+    --danger-red: #d9534f;
+    --light-bg: #f8f9fa;
+    --border-gray: #ddd;
+    --text-main: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-main);
+    background-color: var(--light-bg);
+    max-width: 900px;
+    margin: 20px auto;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+/* main titles */
+h1, h2 {
+    color: var(--primary-teal);
+    border-bottom: 0.3em solid var(--primary-teal);
+    padding-bottom: 0.3em;
+}
+
+form{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: var(--primary-teal);
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.category-card {
+    border : 1px solid #ccc;
+    
+    padding: 1em;
+} 
+
+#formMessage, #formMessageCat {
+    color: red;
+}
+
+/* layout containers */
+#app {
+    background: white;
+    padding: 1em 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#createCatForm {
+    width: 25em;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-gray);
+    display: flex;
+    flex-direction: column;
+    /* Spacing between form elements */
+    gap: 12px; 
+}
+
+#createCatForm, 
+.form-container, 
+.category-card,
+.course-card,
+.card-content {
+    width: 100%;          
+    max-width: 500px;      
+    /* centers */
+    margin-left: auto;    
+    margin-right: auto;    
+    box-sizing: border-box; 
+}
+
+.form-container {
+    width: 22em;
+    background: #fff;
+    border: 1px solid var(--border-gray);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    /* Wraps on small screens */
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* main course information name, weigth total and credits */
+.card-content {
+    width: 22em; 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    border-radius: 0.5em;
+    border: 1px solid var(--border-gray);
+}
+
+.course-stats {
+    display: flex;
+}
+
+/* inputs and buttons */
+input {
+    padding: 0.6rem;
+    border: 1px solid var(--border-gray);
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 0.5em;
+}
+
+button {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    background: var(--primary-teal);
+    color: white;
+    margin-bottom: 0.8em;
+}
+
+button:hover {
+    filter: brightness(1.2);
+}
+
+#addItem {
+    margin-top: 1em;
+}
+
+#submitCourseBtn, #submitCatBtn {
+    margin-top: 1em;
+}
+
+.delete-btn, .delete-item-btn {
+    background: transparent;
+    color: var(--danger-red);
+    border: 1px solid var(--danger-red);
+   
+}
+
+
+/* delete button hover effect */
+.delete-btn:hover, .delete-item-btn:hover {
+    background: var(--danger-red);
+    color: white;
+}
+
+/* table styling for items */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th {
+    background: #f4f4f4;
+    text-align: left;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid var(--border-gray);
+}
+
+/* category  */
+.category-card {
+    border: 1px solid var(--border-gray);
+    /* left line */
+    border-left: 5px solid var(--primary-teal); 
+    margin-top: 1.5em;
+    padding: 1.2em;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.toggle-btn {
+    background: none;
+    color: var(--primary-teal);
+    font-size: 1.2rem;
+    padding: 0 10px;
+}
+
+.message-area {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: var(--danger-red);
+}
+
+/* Interactivity */
+.course-card {
+    cursor: pointer;
+    transition: transform 0.2s;
+    padding : 1em;
+    border : 1px solid #ccc;
+    background-color: var(--light-bg);
+}
+
+.course-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--primary-teal);
+}
+
+.grade-excellent{
+    color: #1c8635;
+}
+
+.grade-pass {
+    color: rgb(14, 14, 211);
+}
+
+.grade-fail {
+    color: red;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+}
+.header-info {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Spaces out the name, weight, and average */
+}
+
+
+/* label styling */
+#createCatForm label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: -5px; /* Pulls label closer to its input */
+}
+
+tr:hover {
+    background-color: #f0f7ff; /* Light blue highlight */
+}
+
+/* gpa */
+.gpa-card {
+    text-align: center;
+    color: #008080;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
