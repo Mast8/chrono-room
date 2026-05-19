@@ -232,6 +232,7 @@ td {
     border: 1px solid #e0e0e0;
     margin-bottom: 10px;
 }
+
 .header-info {
     display: flex;
     align-items: center;
@@ -256,4 +257,11 @@ tr:hover {
     color: #008080;
     font-weight: bold;
     margin-bottom: 1em;
+}
+
+@media (max-width: 600px) {
+    .header-info ,
+    .header-container {
+        flex-direction: column;
+    }
 }
