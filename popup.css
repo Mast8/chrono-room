@@ -79,14 +79,14 @@ label {
 }
 
 .form-container {
-    width: 22em;
+    
     background: #fff;
     border: 1px solid var(--border-gray);
     padding: 1.5rem;
     border-radius: 8px;
     margin-bottom: 1.5rem;
-    display: flex;
-    /* Wraps on small screens */
+    
+    /* wraps on small screens */
     flex-wrap: wrap; 
     justify-content: space-between;
     align-items: center;

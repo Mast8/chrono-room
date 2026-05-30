@@ -154,12 +154,12 @@ function renderHome(container) {
     const list = document.createElement("div");
     state.courses.forEach((course, index) => {
         const courseCard = document.createElement("div");
-        courseCard.classList.add("form-container");
+        
 
         const grade = calculateCourseGrade(course);
         const statusClass = getGradeStatusClass(grade);
         
-        courseCard.classList.add("form-container", "course-card", statusClass);
+        courseCard.classList.add("course-card", statusClass);
 
         courseCard.innerHTML = `
             <div>
