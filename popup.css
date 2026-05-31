@@ -68,7 +68,7 @@ label {
 #createCatForm, 
 .form-container, 
 .category-card,
-.course-card,
+
 .card-content {
     width: 100%;          
     max-width: 500px;      
@@ -79,7 +79,6 @@ label {
 }
 
 .form-container {
-    
     background: #fff;
     border: 1px solid var(--border-gray);
     padding: 1.5rem;
@@ -196,8 +195,18 @@ td {
     color: var(--danger-red);
 }
 
-/* Interactivity */
+/* interactivity */
 .course-card {
+    width: 70%;
+    margin-left: auto;    
+    margin-right: auto;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+
+    padding: 5em;
+    box-sizing: border-box; 
     cursor: pointer;
     transition: transform 0.2s;
     padding : 1em;
