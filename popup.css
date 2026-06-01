@@ -93,7 +93,7 @@ label {
 
 /* main course information name, weigth total and credits */
 .card-content {
-    width: 22em; 
+   
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -197,7 +197,7 @@ td {
 
 /* interactivity */
 .course-card {
-    width: 70%;
+    width: 100%;
     margin-left: auto;    
     margin-right: auto;    
     display: flex;
@@ -270,7 +270,10 @@ tr:hover {
 
 @media (max-width: 600px) {
     .header-info ,
-    .header-container {
+    .header-container, 
+    .card-content , .course-card{
         flex-direction: column;
     }
+
+
 }
