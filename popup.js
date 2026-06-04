@@ -198,6 +198,8 @@ function renderHome(container) {
 
     // export Button
     const exportBtn = document.createElement("button");
+    exportBtn.classList.add("export-btn"); 
+
     exportBtn.textContent = "Export to JSON";
 
     exportBtn.onclick = () => {
@@ -211,7 +213,7 @@ function renderHome(container) {
     importSection.style.marginTop = "1em";
 
     importSection.innerHTML = `
-        <button id="importBtn">Import JSON</button>
+        <button class="import-btn" id="importBtn">Import JSON</button>
         <input type="file" id="fileInput" accept=".json" style="display: none;">
     `;
 

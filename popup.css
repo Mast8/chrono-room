@@ -131,6 +131,11 @@ button:hover {
     filter: brightness(1.2);
 }
 
+.export-btn, .import-btn {
+    display: flex;
+    justify-self: center;
+}
+
 #addItem {
     margin-top: 1em;
 }
@@ -198,13 +203,13 @@ td {
 /* interactivity */
 .course-card {
     width: 100%;
+    max-width: 500px;
     margin-left: auto;    
     margin-right: auto;    
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1em;
-
     padding: 5em;
     box-sizing: border-box; 
     cursor: pointer;
@@ -212,6 +217,7 @@ td {
     padding : 1em;
     border : 1px solid #ccc;
     background-color: var(--light-bg);
+    border-radius: 1em;
 }
 
 .course-card:hover {
