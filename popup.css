@@ -83,7 +83,7 @@ label {
     border: 1px solid var(--border-gray);
     padding: 1.5rem;
     border-radius: 8px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1em;
     
     /* wraps on small screens */
     flex-wrap: wrap; 
@@ -272,6 +272,12 @@ tr:hover {
     color: #008080;
     font-weight: bold;
     margin-bottom: 1em;
+    padding: 0.5em;
+    width: 17%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.7em;
+    border: 0.3em solid #09bbbb;
 }
 
 @media (max-width: 600px) {
