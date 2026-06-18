@@ -20,7 +20,6 @@ body {
 h1, h2 {
     color: var(--primary-teal);
     border-bottom: 0.3em solid var(--primary-teal);
-    padding-bottom: 0.3em;
 }
 
 form{
@@ -48,7 +47,7 @@ label {
 /* layout containers */
 #app {
     background: white;
-    padding: 1em 2em;
+    padding: 0.1em 2em;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
